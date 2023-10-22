@@ -53,7 +53,7 @@ export const products = [
         colors: []
     },
     {
-        id: 4,
+        id: 5,
         imgURL: chair,
         name: 'S-Series Comfort Chair ',
         prevPrice: 45,
@@ -64,7 +64,7 @@ export const products = [
         colors: []
     },
     {
-        id: 4,
+        id: 6,
         imgURL: chair,
         name: 'S-Series Comfort Chair ',
         prevPrice: 45,
@@ -75,7 +75,7 @@ export const products = [
         colors: []
     },
     {
-        id: 4,
+        id: 7,
         imgURL: chair,
         name: 'S-Series Comfort Chair ',
         prevPrice: 45,
@@ -86,27 +86,51 @@ export const products = [
         colors: []
     },
     {
-        id: 4,
+        id: 8,
         imgURL: chair,
-        name: 'S-Series Comfort Chair ',
+        name: 'Mans Jacket ',
         prevPrice: 45,
         newPrice: 36,
         starNumber: 4,
         reviewNumber: 42,
-        category: 'Home & Lifestyle',
+        category: "Man's Fashion",
         colors: []
     },
     {
-        id: 4,
+        id: 9,
         imgURL: chair,
-        name: 'S-Series Comfort Chair ',
+        name: 'Womans Jacket',
         prevPrice: 45,
         newPrice: 36,
         starNumber: 4,
         reviewNumber: 42,
-        category: 'Home & Lifestyle',
+        category: "Woman's Fashion",
         colors: []
     },
 
 
+];
+
+
+export const arrayOfCategories = [
+    // { text: "All", value: "All", name: 'Category' },
+    { text: "Woman's Fashion", value: "Woman's Fashion", name: 'Category' },
+    { text: "Man's Fashion", value: "Man's Fashion", name: 'Category' },
+    { text: 'Electronics', value: 'Electronics', name: 'Category' },
+    { text: 'Home & Lifestyle', value: 'Home & Lifestyle', name: 'Category' },
+    { text: 'Medicine', value: 'Medicine', name: 'Category' },
+    { text: 'Sports & Outdoor', value: 'Sports & Outdoor', name: 'Category' },
+    { text: 'Baby & Toys', value: 'Baby & Toys', name: 'Category' },
+    { text: 'Groceries & Pets', value: 'Groceries & Pets', name: 'Category' },
+    { text: 'Health & Beauty', value: 'Health & Beauty', name: 'Category' },
+
+];
+
+
+export const arrayOfPrices = [
+    // { text: "All", value: 1000000, name: 'Price' },
+    { text: "$0 - $100", value: '100', name: 'Price' },
+    { text: "$100 - $1000", value: '1000', name: 'Price' },
+    { text: "$1000 - $5000", value: '5000', name: 'Price' },
+    { text: "over $5000", value: '10000', name: 'Price' },
 ];

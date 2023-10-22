@@ -1,19 +1,31 @@
 import Radio from '../components/UI/Radio';
+import { arrayOfCategories } from '../constants';
 
-const Category = () => {
+const Category = ({ filter, setFilter }) => {
   return (
     <div className="flex flex-col gap-y-[2px]">
       <h2 className="text-2xl mb-2 font-medium">Category</h2>
-      <Radio text={'All'} name={'Category'} />
-      <Radio text={"Woman's Fashion"} name={'Category'} />
-      <Radio text={"Man's Fashion"} name={'Category'} />
-      <Radio text={'Electronics'} name={'Category'} />
-      <Radio text={'Home & Lifestyle'} name={'Category'} />
-      <Radio text={'Medicine'} name={'Category'} />
-      <Radio text={'Sports & Outdoor'} name={'Category'} />
-      <Radio text={'Baby & Toys'} name={'Category'} />
-      <Radio text={'Groceries & Pets'} name={'Category'} />
-      <Radio text={'Health & Beauty'} name={'Category'} />
+      <Radio
+        key="All"
+        text="All"
+        value="All"
+        name="Category"
+        defaultChecked
+        onChange={event =>
+          setFilter({ ...filter, category: event.target.value })
+        }
+      />
+      {arrayOfCategories.map(({ text, value, name }) => (
+        <Radio
+          key={value}
+          text={text}
+          value={value}
+          name={name}
+          onChange={event =>
+            setFilter({ ...filter, category: event.target.value })
+          }
+        />
+      ))}
     </div>
   );
 };
