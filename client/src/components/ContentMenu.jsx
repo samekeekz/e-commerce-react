@@ -3,12 +3,12 @@ const ContentMenu = () => {
     <ul className="flex flex-col gap-y-4 mt-10 w-[217px]">
       <li>
         <a className="link-text" href="">
-          Woman's Fashion
+          Woman&apos;s Fashion
         </a>
       </li>
       <li>
         <a className="link-text" href="">
-          Man's Fashion
+          Man&apos;s Fashion
         </a>
       </li>
       <li>

@@ -6,10 +6,6 @@ const Header = () => {
   return (
     <section className="container">
       <Navbar />
-      <div className="flex justify-between">
-        <ContentMenu />
-        <Carousel />
-      </div>
     </section>
   );
 };

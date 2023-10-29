@@ -1,4 +1,4 @@
-const Radio = ({ text, name, color = null, ...props }) => {
+const Checkbox = ({ text, name, color = null, ...props }) => {
   const boxStyle = {
     backgroundColor: color ? color : '', // Use a ternary operator
   };
@@ -7,7 +7,7 @@ const Radio = ({ text, name, color = null, ...props }) => {
       <input
         className="radio mr-2"
         style={boxStyle}
-        type="radio"
+        type="checkbox"
         name={name}
         {...props}
       />
@@ -16,4 +16,4 @@ const Radio = ({ text, name, color = null, ...props }) => {
   );
 };
 
-export default Radio;
+export default Checkbox;

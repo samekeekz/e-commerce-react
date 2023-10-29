@@ -1,4 +1,4 @@
-import Radio from '../components/UI/Radio';
+import Radio from '../components/UI/Checkbox';
 
 const Colors = () => {
   return (

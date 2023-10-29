@@ -2,7 +2,7 @@ import Card from '../components/Card';
 
 const Sales = ({ products }) => {
   return (
-    <div className="mt-10 flex items-start flex-wrap gap-5">
+    <div className="mt-10 flex items-start flex-wrap gap-5 transition-all">
       {products.map(product => (
         <Card
           imgURL={product.imgURL}
