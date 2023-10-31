@@ -1,9 +1,7 @@
-import { useContext, useState } from 'react';
-import Radio from '../components/UI/Checkbox';
-import { arrayOfPrices } from '../constants';
+import { useContext } from 'react';
 import ReactSlider from 'react-slider';
 import Input from '../components/UI/Input';
-import { Context } from '../components/context/context';
+import { Context } from '../components/context/Context';
 
 const Price = () => {
   const { filter, setFilter } = useContext(Context);

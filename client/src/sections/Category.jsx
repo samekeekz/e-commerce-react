@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { arrayOfCategories } from '../constants';
-import { Context } from '../components/context/context';
+import { Context } from '../components/context/Context';
 import Checkbox from '../components/UI/Checkbox';
 
 const Category = () => {
@@ -12,9 +12,7 @@ const Category = () => {
         // If the category is already in the array, remove it
         return {
           ...prevFilter,
-          category: prevFilter.category.filter(
-            category => category !== selectedCategory,
-          ),
+          category: prevFilter.category.filter(category => category !== selectedCategory),
         };
       } else {
         // If the category is not in the array, add it

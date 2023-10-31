@@ -1,8 +1,8 @@
-import Card from '../components/Card';
+import Card from './Card';
 
-const Sales = ({ products }) => {
+const Products = ({ products }) => {
   return (
-    <div className="mt-10 flex items-start flex-wrap gap-5 transition-all">
+    <div className="pt-14 flex items-start flex-wrap gap-5 transition-all">
       {products.map(product => (
         <Card
           imgURL={product.imgURL}
@@ -12,10 +12,12 @@ const Sales = ({ products }) => {
           starNumber={product.starNumber}
           reviewNumber={product.reviewNumber}
           key={product.id}
+          id={product.id}
+          category={product.category}
         />
       ))}
     </div>
   );
 };
 
-export default Sales;
+export default Products;

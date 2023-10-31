@@ -213,7 +213,8 @@ input[type='number'] {
 }
 
 .active {
-  color: red;
+  border-bottom: 1px solid black;
+  border-radius: 1px;
 }
 
 .footer-list {

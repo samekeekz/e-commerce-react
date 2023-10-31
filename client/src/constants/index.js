@@ -17,6 +17,7 @@ export const products = [
         starNumber: 5,
         reviewNumber: 88,
         category: 'Electronics',
+        subCategory: "Gaming",
         colors: []
     },
     {
@@ -28,6 +29,7 @@ export const products = [
         starNumber: 5,
         reviewNumber: 18,
         category: 'Electronics',
+        subCategory: "Gaming",
         colors: []
     },
     {
@@ -39,6 +41,7 @@ export const products = [
         starNumber: 3,
         reviewNumber: 30,
         category: 'Electronics',
+        subCategory: "Keyboard",
         colors: []
     },
     {
@@ -50,6 +53,7 @@ export const products = [
         starNumber: 4,
         reviewNumber: 42,
         category: 'Home & Lifestyle',
+        subCategory: "House",
         colors: []
     },
     {
@@ -61,6 +65,7 @@ export const products = [
         starNumber: 4,
         reviewNumber: 42,
         category: 'Home & Lifestyle',
+        subCategory: "House",
         colors: []
     },
     {
@@ -72,6 +77,7 @@ export const products = [
         starNumber: 4,
         reviewNumber: 42,
         category: 'Home & Lifestyle',
+        subCategory: "House",
         colors: []
     },
     {
@@ -83,6 +89,7 @@ export const products = [
         starNumber: 4,
         reviewNumber: 42,
         category: 'Home & Lifestyle',
+        subCategory: "Gaming",
         colors: []
     },
     {
@@ -94,6 +101,7 @@ export const products = [
         starNumber: 4,
         reviewNumber: 42,
         category: "Man's Fashion",
+        subCategory: "Clothing",
         colors: []
     },
     {
@@ -105,10 +113,21 @@ export const products = [
         starNumber: 4,
         reviewNumber: 42,
         category: "Woman's Fashion",
+        subCategory: "Woman",
         colors: []
     },
-
-
+    {
+        id: 10,
+        imgURL: chair,
+        name: 'Mans Shoes ',
+        prevPrice: 45,
+        newPrice: 555,
+        starNumber: 4,
+        reviewNumber: 42,
+        category: "Man's Fashion",
+        subCategory: "Shoes",
+        colors: []
+    },
 ];
 
 
@@ -134,3 +153,7 @@ export const arrayOfPrices = [
     { text: "$1000 - $5000", value: '5000', name: 'Price' },
     { text: "over $5000", value: '10000', name: 'Price' },
 ];
+
+export const categories = [
+    "Woman's Fashion", "Man's Fashion", 'Electronics', 'Home & Lifestyle', 'Medicine', 'Sports & Outdoor', 'Baby & Toys', 'Groceries & Pets', 'Health & Beauty'
+]

@@ -1,38 +1,32 @@
 import { useContext, useMemo, useState } from 'react';
 import Header from '../sections/Header';
-import Sales from '../sections/Sales';
+import Sales from '../components/Products';
 import Sidebar from '../sections/Sidebar';
 import { products } from '../constants';
 import { useSortedProducts } from '../hooks/useProducts';
-import { Context } from '../components/context/context';
+import { Context } from '../components/context/Context';
 import ContentMenu from '../components/ContentMenu';
 import Carousel from '../components/Carousel';
+import Products from '../components/Products';
+import SearchInput from '../components/UI/SearchInput';
 
 const Home = () => {
-  const [filter, setFilter] = useState({
-    category: [],
-    priceMin: 0,
-    priceMax: 1500,
-  });
-  const sortedProducts = useSortedProducts(products, filter);
-
-  console.log(filter);
+  const { filter, setFilter, sortedProducts } = useContext(Context);
   return (
-    <Context.Provider value={{ filter, setFilter }}>
-      <div className="container">
-        <div className="flex justify-between">
-          <ContentMenu />
-          <Carousel />
-        </div>
-        {/* <Sales products={sortedProducts} /> */}
-        <div className="mt-8 grid-container">
-          <Sidebar />
-          <div className="pl-10">
-            <Sales products={sortedProducts} />
-          </div>
-        </div>
+    <div className="container">
+      <div className="flex justify-between">
+        <ContentMenu />
+        <Carousel />
       </div>
-    </Context.Provider>
+      <Products products={products} />
+      {/* <div className="mt-8 grid-container">
+          <Sidebar />
+          <div className="pl-10 relative">
+            <SearchInput />
+            <Products products={sortedProducts} />
+          </div>
+        </div> */}
+    </div>
   );
 };
 

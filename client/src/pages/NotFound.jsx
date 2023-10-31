@@ -1,5 +1,4 @@
-import Button from '../components/UI/Button';
-import { Link } from 'react-router-dom';
+import LinkButton from '../components/UI/LinkButton';
 
 const NotFound = () => {
   return (
@@ -10,9 +9,7 @@ const NotFound = () => {
       <p className="font-poppins leading-6 mb-20">
         Your visited page not found. You may go home page.
       </p>
-      <Button>
-        <Link to="/">Back to Home page</Link>
-      </Button>
+      <LinkButton to="/">Back to Home page</LinkButton>
     </div>
   );
 };
